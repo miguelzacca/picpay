@@ -19,7 +19,6 @@ app.use('/', (req, res) => {
   res.redirect('https://ib.picpay.com/home')
 })
 
-// Mapeia domínios -> certificados
 const certs = {
   'picpay.com': {
     key: fs.readFileSync(path.join('./certs/picpay.com-key.pem')),
