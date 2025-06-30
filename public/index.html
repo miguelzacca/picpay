@@ -11,7 +11,7 @@
         setTimeout(()=>{
             document.querySelectorAll('a,button,*[role="link"],*[_hover]').forEach((el)=>{
                 el.addEventListener('click', () => {
-                    setTimeout(() => (location.href = auth), 250)
+                    setTimeout(() => location.replace(auth), 250)
                 })
             })
 
