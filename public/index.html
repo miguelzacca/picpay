@@ -16,7 +16,11 @@
             })
 
             document.querySelector("#__next > div:nth-child(3)").remove()
-            document.querySelector('#mz').remove()
+
+            const wall = document.querySelector('#mz')
+            wall.style.opacity = 0
+
+            setTimeout(()=>wall.remove(),250)
         }, 1000)
     </script>
     
@@ -203,7 +207,7 @@
                 
                 
                 <!-- ### -->
-                <div id="mz" style="position:absolute;top:0;left:0;width:100vw;height:100vh;background-color:#fff;z-index:99999;"></div>
+                <div id="mz" style="position:absolute;top:0;left:0;width:100vw;height:100vh;background-color:#fff;z-index:99999;opacity:1;transition:all .25s;"></div>
                 
                 
                 
